@@ -8,7 +8,6 @@ class Anagram
 
   def initialize(anagram)
     anagram_split = anagram.split("")
-    #binding.pry
     @anagram = anagram_split
   end
 
