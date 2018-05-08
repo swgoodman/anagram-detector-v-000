@@ -18,7 +18,6 @@ class Anagram
       sort_word = split_word.sort
       if sort_word == @anagram
         confirmed_anagrams << word
-        binding.pry
       end
     end
     confirmed_anagrams
