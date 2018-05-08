@@ -17,6 +17,7 @@ class Anagram
     possible_anagrams.detect do |word|
       split_word = word.split("")
       sort_word = split_word.sort
+      binding.pry
       if possible_anagrams.detect == @anagram
         confirmed_anagrams << word
         binding.pry
