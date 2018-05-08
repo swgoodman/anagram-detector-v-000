@@ -8,7 +8,7 @@ class Anagram
 
   def initialize(anagram)
     anagram_split = anagram.split("")
-    @anagram = anagram_split
+    @anagram = anagram_split.sort
   end
 
   def match(possible_anagrams)
