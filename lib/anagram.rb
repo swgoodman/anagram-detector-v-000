@@ -14,11 +14,11 @@ class Anagram
 
   def match(possible_anagrams)
     confirmed_anagrams = []
-    possible_anagrams.detect do |word|
+    possible_anagrams.each do |word|
       split_word = word.split("")
       sort_word = split_word.sort
       binding.pry
-      if possible_anagrams.detect == @anagram
+      if sort_word == @anagram
         confirmed_anagrams << word
         binding.pry
       end
